@@ -1,0 +1,16 @@
+
+<div class="listListFrame group">
+
+  <% lists.forEach(function (list) { %>
+    <% if (list.escape("board_id") == board.id) { %>
+
+      <div class='listList'>
+        <%= list.escape('title')%>
+        <div id='sortable<%= list.id %>' class='cardsContainer' list-id='<%= list.id %>'></div>
+      </div>
+
+    <% } %>
+  <% }) %>
+
+
+</div>

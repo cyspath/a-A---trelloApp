@@ -1,0 +1,6 @@
+
+  <% cards.forEach(function (card) { %>
+    <% if (card.escape("list_id") == list_id) { %>
+      <div class='cardList'><%= card.escape('title')%></div>
+    <% } %>
+  <% }) %>

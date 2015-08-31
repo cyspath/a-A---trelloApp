@@ -1,0 +1,16 @@
+// Place all the styles related to the root controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1.bigheader {
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -20px;
+  text-align: center;
+  padding: 8px;
+  text-shadow: 0 0 2px white;
+  font-weight: lighter;
+  color: white;
+  background-color: #3b5998;
+  font-family:cursive;
+}

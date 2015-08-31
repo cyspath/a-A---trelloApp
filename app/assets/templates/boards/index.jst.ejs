@@ -1,0 +1,23 @@
+<h1 class="boardsIndex">Boards Index</h1>
+
+<div class="boardListFrame group">
+
+  <% boards.forEach(function (board) { %>
+  <div class="boardList">
+      <a href="#/boards/<%= board.escape('id')%>"><%= board.escape('title')%></a>
+
+      <br>
+      <button class='delete' data-id='<%= board.escape('id')%>'> << delete this board </button>
+
+      <a href="#/boards/<%= board.escape('id')%>/edit"><< edit this board </a>
+
+  </div>
+  <% }) %>
+
+</div>
+    <br><BR>
+
+<div class="newBoard">
+<a href="#/boards/new">Make a new board!</a>
+
+</div>
